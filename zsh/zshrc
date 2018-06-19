@@ -1,0 +1,16 @@
+export ZSH=/Users/sanghongwei/.oh-my-zsh
+
+ZSH_THEME="gnzh"
+
+plugins=(
+  git
+)
+
+source $ZSH/oh-my-zsh.sh
+
+#Exporting things
+TERM=xterm
+export PATH=$PATH:$TERM
+
+#alias
+alias byteformatter='~/tools/byteformatter.sh'
