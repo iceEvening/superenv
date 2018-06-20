@@ -1,6 +1,6 @@
 #!/bin/bash
 #Install packages
-apt-get update && apt-get install zsh git docker.io
+apt-get update && apt-get install zsh git docker.io python-tk
 
 #Install pip packages
 export LC_ALL=C

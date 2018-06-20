@@ -17,6 +17,7 @@
 * zsh
 * git
 * docker.io
+* python-tk
 
 ## For Python
 * numpy
