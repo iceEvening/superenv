@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ $1 < 1024 ]]; then
+if [[ $1 -lt 1024 ]]; then
     echo "$1""B"
 elif [[ $1 -lt $((1024 ** 2)) ]]; then
     fmt=$(printf "%.2f" `echo "scale=2;$1/1024"|bc`)
