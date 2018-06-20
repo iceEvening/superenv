@@ -1,4 +1,4 @@
-export ZSH=/Users/sanghongwei/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="gnzh"
 
