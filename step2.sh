@@ -1,6 +1,6 @@
 #!/bin/zsh
 #Zsh configuration
-if [ -f "~/.zshrc" ]; then
+if [ -f "/root/.zshrc" ]; then
     mv ~/.zshrc ~/.zshrc.backup
 fi
 cp ./zsh/zshrc ~/.zshrc
@@ -14,7 +14,7 @@ mkdir ~/tools
 cp ./tools/bytefotmatter.sh ~/tools
 
 #Vim configuration
-if [ -f "~/.vimrc" ]; then
+if [ -f "/root/.vimrc" ]; then
     mv ~/.vimrc ~/.vimrc_backup
 fi
 cp ./vim/vimrc ~/.vimrc
@@ -41,7 +41,7 @@ cd vim
 --with-python-config-dir=/usr/lib/python2.7/config \
 --enable-perlinterp \
 --enable-luainterp \
---with-luajit –enable-fail-if-missing \
+--with-luajit -enable-fail-if-missing \
 --with-lua-prefix=/usr \
 --enable-gui=gnome2 --enable-cscope --prefix=/usr
 make VIMRUNTIMEDIR=/usr/share/vim/vim81
