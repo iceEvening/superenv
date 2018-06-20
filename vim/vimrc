@@ -1,7 +1,7 @@
 call pathogen#infect()
 "searching high light
 set hlsearch
-
+set encoding=utf8
 "show line number
 set nu
 
