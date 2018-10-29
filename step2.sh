@@ -11,7 +11,7 @@ source ~/.zshrc
 
 #Tools
 mkdir ~/tools
-cp ./tools/bytefotmatter.sh ~/tools
+cp ./tools/byteformatter.sh ~/tools
 
 #Vim configuration
 if [ -f "/root/.vimrc" ]; then
