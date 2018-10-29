@@ -18,7 +18,6 @@ if [ -f "/root/.vimrc" ]; then
     mv ~/.vimrc ~/.vimrc_backup
 fi
 cp ./vim/vimrc ~/.vimrc
-cp -r ./vim/autoload ~/.vim/
 mkdir ~/.vim/bundle && cd ~/.vim/bundle
 git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/scrooloose/nerdtree.git
@@ -44,5 +43,6 @@ cd vim
 --with-luajit -enable-fail-if-missing \
 --with-lua-prefix=/usr \
 --enable-gui=gnome2 --enable-cscope --prefix=/usr
-make VIMRUNTIMEDIR=/usr/share/vim/vim81
+make VIMRUNTIMEDIR=/usr/local/share/vim/vim81
 make install
+cp -r ./vim/autoload ~/.vim/
