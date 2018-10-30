@@ -45,4 +45,4 @@ cd vim
 --enable-gui=gnome2 --enable-cscope --prefix=/usr
 make VIMRUNTIMEDIR=/usr/local/share/vim/vim81
 make install
-cp -r ./vim/autoload ~/.vim/
+cp -r /tmp/superenv/vim/autoload ~/.vim/
