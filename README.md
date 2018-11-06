@@ -4,7 +4,7 @@
 `apt-get update && apt-get install git`
 
 ## 2. Clone superenv from github
-`cd /tmp && git clone https://github.com/sanghongwei/superenv.git`
+`cd /tmp && git clone https://github.com/iceEvening/superenv.git`
 
 ## 3. Install packages and Oh my ZSH
 `cd superenv && source ./step1.sh`
