@@ -1,6 +1,6 @@
 #!/bin/bash
 #Install packages
-apt-get update && apt-get install zsh git docker.io python-tk
+sudo apt-get update && sudo apt-get install zsh git docker.io python-tk
 
 #Install pip packages
 export LC_ALL=C
@@ -8,4 +8,3 @@ pip install numpy scipy matplotlib paddlepaddle tensorflow pandas -i https://pyp
 
 #Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
