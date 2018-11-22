@@ -18,16 +18,16 @@ if [ -f "/root/.vimrc" ]; then
     mv ~/.vimrc ~/.vimrc_backup
 fi
 cp ./vim/vimrc ~/.vimrc
-mkdir ~/.vim/bundle && cd ~/.vim/bundle
+mkdir -p ~/.vim/bundle && cd ~/.vim/bundle
 git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone https://github.com/fatih/vim-go.git
 
 #Remove old vim & Install new vim with lua
-apt-get remove vim vim-runtime  vim-tiny vim-common vim-gui-common
-apt-get purge vim vim-runtime  vim-tiny vim-common vim-gui-common
-apt-get install luajit libluajit-5.1 libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial
+sudo apt-get remove vim vim-runtime  vim-tiny vim-common vim-gui-common
+sudo apt-get purge vim vim-runtime  vim-tiny vim-common vim-gui-common
+sudo apt-get install luajit libluajit-5.1 libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial
 cd /tmp
 git clone https://github.com/vim/vim.git
 cd vim
@@ -44,5 +44,5 @@ cd vim
 --with-lua-prefix=/usr \
 --enable-gui=gnome2 --enable-cscope --prefix=/usr
 make VIMRUNTIMEDIR=/usr/local/share/vim/vim81
-make install
-cp -r /tmp/superenv/vim/autoload ~/.vim/
+sudo make install
+mkdir -p ~/.vim/autoload && cp -r /tmp/superenv/vim/autoload ~/.vim/
